@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Validation</title>
+</head>
+
+<body>
+    <div class="main">
+        <form class="form-register" action="">
+            <div class="form-register__container">
+                <div class="form-register__container__head">
+                    <div class="form-register__container__head__img">
+                        <img src="https://st-fe-v2.fado.vn/desktop/image/logo/logo-fado.svg" alt="">
+                    </div>
+                    <div class="form-register__container__head__option">
+                        <div class="form-register__container__head__option__inner__login">
+                            <span>ĐĂNG NHẬP</span>
+                        </div>
+                        <div class="form-register__container__head__option__inner__register">
+                            <span>ĐĂNG KÝ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-register__formgroup">
+                    <label for="">Họ và Tên</label>
+                    <input id="fullname" name="fullname" class="form-control" type="text"
+                        placeholder="Vui lòng nhập họ tên chính xác ">
+                    <div class="errmessage"></div>
+                </div>
+
+                <div class="form-register__formgroup">
+                    <label for="">Địa chỉ email</label>
+                    <input id="email" name="email" class="form-control" type="text"
+                        placeholder="Địa chỉ Email của quý khách">
+                    <div class="errmessage"></div>
+                </div>
+                <div class="form-register__formgroup">
+                    <label for="">Số điện thoại</label>
+                    <input id="phone" name="phone" class="form-control" type="text"
+                        placeholder="Vui lòng nhập số điện thoại chính xác">
+                    <div class="errmessage"></div>
+                </div>
+                <div class="container_separate">
+                    <div class="form-register__formgroup">
+                        <label for="">Mật khẩu</label>
+                        <input id="password" name="password" class="form-control" type="text"
+                            placeholder="Mật khẩu của quý khách">
+                        <div class="errmessage"></div>
+                    </div>
+                    <div class="form-register__formgroup">
+                        <label for="">Xác nhận mật khẩu</label>
+                        <input id="confirm-password" name="confirm-password" class="form-control" type="text"
+                            placeholder="Nhập lại mật khẩu">
+                        <div class="errmessage"></div>
+                    </div>
+                </div>
+                <div class="container_separate">
+                    <div class="form-register__formgroup">
+                        <label for="">Ngày sinh</label>
+                        <input id="birthday" name="date" class="form-control" type="date" placeholder="Ngày sinh">
+                    </div>
+                    <div class="form-register__formgroup">
+                        <select name="gender" id="gender">
+                            <option value="">Giới tính</option>
+                            <option value="male">Nam</option>
+                            <option value="female">Nữ</option>
+                            <option value="other">Khác</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-register__formgroup">
+                    <div class="form1__formgroup__errchecked">Có lỗi xảy ra:</div>
+                    <div class="errcheckmessageemail"></div>
+                    <div class="errcheckmessagephone"></div>
+                </div>
+                <button class="form-register_submit">
+                    Đăng ký
+                </button>
+            </div>
+        </form>
+        <form class="form-login" action="">
+            <div class="form-login__container">
+                <div class="form-login__container__head">
+                    <div class="form-login__container__head__img">
+                        <img src="https://st-fe-v2.fado.vn/desktop/image/logo/logo-fado.svg" alt="">
+                    </div>
+                    <div class="form-login__container__head__option">
+                        <div class="form-login__container__head__option__inner__login">
+                            <span>ĐĂNG NHẬP</span>
+                        </div>
+                        <div class="form-login__container__head__option__inner__register">
+                            <span>ĐĂNG KÝ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-login__formgroup">
+                    <label for="">Địa chỉ email</label>
+                    <input class="email" name="email" class="form-control" type="text"
+                        placeholder="Địa chỉ Email của quý khách">
+                    <div class="errmessage"></div>
+                </div>
+                <div class="form-login__formgroup">
+                    <label for="">Mật khẩu</label>
+                    <input class="password" name="password" class="form-control" type="password"
+                        placeholder="Mật khẩu của quý khách">
+                    <div class="errmessage"></div>
+                </div>
+                <div class="forget-password">Quên mật khẩu ?</div>
+                <div class="form-login__formgroup">
+                    <div class="form-login__formgroup__errchecked">Có lỗi xảy ra:</div>
+                    <div class="errcheckmessageemail"></div>
+                    <div class="errcheckmessagepass"></div>
+                </div>
+                <button class="form-login_submit">Đăng nhập</button>
+                <div class="main__form-login__body__footer-1">
+                    <hr>
+                    <div>Hoặc đăng nhập qua</div>
+                    <hr>
+                </div>
+                <div class="main__form-login__body__footer-2">
+                    <div>
+                        Facebook
+                    </div>
+                    <div>
+                        Google Plus
+                    </div>
+                </div>
+            </div>
+        </form>
+        <form class="form-board" action="">
+            <div class="form-board__container">
+                <div class="form-board__container__head">
+                    <div class="form-board__container__head__img">
+                        <img src="https://st-fe-v2.fado.vn/desktop/image/logo/logo-fado.svg" alt="">
+                    </div>
+                    <div class="form-board__container__head__option">
+                        Thông tin tài khoản
+                    </div>
+                </div>
+                <div class="form-board__formgroup">
+                    <label for="">Họ và tên</label>
+                    <input class="fullname" name="fullname" class="form-control" type="text"
+                        placeholder="VD: Nguyễn Văn A">
+                    <div class="errmessage"></div>
+                </div>
+                <div class="form-board__formgroup">
+                    <label for="">Điện thoại</label>
+                    <input class="phone" name="phone" class="form-control" type="text"
+                        placeholder="Vui lòng nhập số điện thoại của bạn">
+                    <div class="errmessage"></div>
+                </div>
+                <div class="form-board__formgroup">
+                    <label for="">Email</label>
+                    <input class="email" name="email" class="form-control" type="text"
+                        placeholder="Địa chỉ Email của quý khách" readonly>
+                    <div class="errmessage"></div>
+                </div>
+                <div class="change_password__container">
+                    <span class="change_password">Đổi mật khẩu ?</span>
+                </div>
+                <div class="form-board__formgroup hiden">
+                    <label for="">Mật khẩu hiện tại</label>
+                    <input class="password" name="password" class="form-control" type="password" placeholder="">
+                    <div class="errmessage"></div>
+                </div>
+                <div class="form-board__formgroup hiden">
+                    <label for="">Mật khẩu mới</label>
+                    <input class="passwordNew" name="passwordNew" class="form-control" type="text" placeholder="">
+                    <div class="errmessage"></div>
+                </div>
+                <div class="form-board__formgroup hiden">
+                    <label for="">Nhập lại mật khẩu mới</label>
+                    <input class="confirm-password" name="confirm-password" class="form-control" type="text"
+                        placeholder="">
+                    <div class="errmessage"></div>
+                </div>
+                <div class="form-board__formgroup">
+                    <label for="">Ngày sinh *</label>
+                    <input class="birthday" name="date" class="form-control" type="date" placeholder="VD: 09-05-2000">
+                </div>
+                <div class="form-board__formgroup">
+                    <label for="">Giới tính</label>
+                    <div class="form-board__formgroup__gender__container">
+                        <label for="male" class="form-board__formgroup__gender">
+                            <input id="male" value="male" name="gender" type="radio">
+                            <label for="male">Nam</label>
+                        </label>
+                        <label for="female" class="form-board__formgroup__gender">
+                            <input id="female" value="female" name="gender" type="radio">
+                            <label for="female">Nữ</label>
+                        </label>
+                        <label for="other" class="form-board__formgroup__gender">
+                            <input id="other" value="other" name="gender" type="radio">
+                            <label for="other">Khác</label>
+                        </label>
+                    </div>
+                    <div class="errmessage"></div>
+                </div>
+                <div class="form-board__formgroup">
+                    <div class="form-board__formgroup__errchecked">Có lỗi xảy ra:</div>
+                    <div class="errcheckmessageemail"></div>
+                    <div class="errcheckmessagepass"></div>
+                </div>
+                <div class="form-board__formgroup btn__infomation">
+                    <button class="form-board__btn__retype">Nhập lại</button>
+                    <button class="form-board__btn__verify">Xác nhận</button>
+                    <button class="form-board__btn__delete">Xóa</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="validation.js"></script>
+    <script>
+        validation(
+            {
+                form: ".form-login",
+                formSelectorChange: ".form-login__container__head__option__inner__register",
+                formDisplay: ".form-register",
+                errorMassage: ".errmessage",
+                submit: ".form-login_submit",
+                rules: [
+                    validation.isRequired(".email", "Vui lòng nhập trường này"),
+                    validation.isEmail(".email", "Email không hợp lệ"),
+                    validation.isRequired(".password", "Vui lòng nhập trường này"),
+                ],
+                dataForm(data) {
+                    let userApi = "http://localhost:3000/user";
+                    if (data) {
+                        let checkstr = {
+                            form: ".form-login",
+                            errorMassageEmail: ".errcheckmessageemail",
+                            errorMassagePass: ".errcheckmessagepass",
+                            errorValueEmail: "Email không chính xác",
+                            errorValuePassword: "Mật khẩu không chính xác",
+                            form3: ".form-board",
+                            displayInfoUser: [".fullname", ".phone", ".email", ".birthday"],
+                            gender: {
+                                gender: ".gender",
+                                male: "#male",
+                                female: "#female",
+                                other: "#other"
+                            }
+                        };
+
+                        checkUser(userApi, data, ".email", ".password", checkstr);
+                    }
+                },
+            });
+        validation(
+            {
+                form: ".form-register",
+                formSelectorChange: ".form-register__container__head__option__inner__login",
+                formDisplay: ".form-login",
+                errorMassage: ".errmessage",
+                submit: ".form-register_submit",
+                rules: [
+                    validation.isRequired("#fullname", "Vui lòng nhập trường này"),
+                    validation.isRequired("#email", "Vui lòng nhập trường này"),
+                    validation.isEmail("#email", "Email không hợp lệ"),
+                    validation.isRequired("#phone", "Vui lòng nhập trường này"),
+                    validation.isLimit("#phone", "Độ dài số điện thoại không hợp lệ", 10, 14),
+                    validation.isPhone("#phone", "Số điện thoại không hợp lệ, chỉ được phép nhập số"),
+                    validation.isRequired("#password", "Vui lòng nhập trường này"),
+                    validation.isRequired("#confirm-password", "Vui lòng nhập trường này"),
+                    validation.isLimit("#password", "Nhập tối thiểu từ 6 ký tự trở lên", 7, 20),
+                    validation.isConfirmPassword("#confirm-password", "#password", "Mật khẩu nhập lại không chính xác"),
+                    validation.isRequired("#birthday", "Vui lòng nhập trường này"),
+                    validation.isRequired("#gender", "Vui lòng nhập trường này"),
+                ],
+                dataForm(data) {
+                    let userApi = "http://localhost:3000/user";
+                    if (data) {
+                        // findStrAlike(data, userApi);
+                        getUser(userApi, function (dataApi) {
+                            let booleanEmail, booleanPhone;
+                            for (let i = 0; i < dataApi.length; i++) {
+                                if (dataApi[i]["#email"] === data["#email"]) {
+                                    booleanEmail = dataApi[i]["#email"];
+                                }
+                                if (dataApi[i]["#phone"] === data["#phone"]) {
+                                    booleanPhone = dataApi[i]["#phone"];
+                                }
+                            }
+                            let checkstr = {
+                                form: ".form-register",
+                                errorMassageEmail: ".errcheckmessageemail",
+                                errorMassagePhone: ".errcheckmessagephone",
+                            };
+                            checkstr.strbooleanPhone = booleanPhone;
+                            checkstr.strbooleanEmail = booleanEmail;
+                            checkstr.dataEmail = data["#email"];
+                            checkstr.dataPhone = data["#phone"];
+                            if (aliveIsmailOrPhone(checkstr, "Email này đã tồn tại", "Số điện thoại này đã tồn tại")) {
+                                createUser(data, userApi, function () { getUser(userApi, function (dataApi) { }) });
+                            }
+                        });
+                    }
+                }
+            });
+        validation(
+            {
+                form: ".form-board",
+                // formSelectorChange: ".form-register__container__head__option__inner__login",
+                // formDisplay: ".form-login",
+                userApi: "http://localhost:3000/user",
+                btnRetype: ".form-board__btn__retype",
+                errorMassage: ".errmessage",
+                submit: ".form-board__btn__verify",
+                btnDelete: ".form-board__btn__delete",
+                email: ".email",
+                formGroup: ".form-board__formgroup__gender",
+                classChangePass: ".change_password",
+                gender: "#gender",
+                inputChangePass: [
+                    ".password",
+                    ".passwordNew",
+                    ".confirm-password",
+                ],
+                rules: [
+                    validation.isRequired(".fullname", "Vui lòng nhập trường này"),
+                    validation.isRequired(".phone", "Vui lòng nhập trường này"),
+                    validation.isLimit(".phone", "Độ dài số điện thoại không hợp lệ", 10, 14),
+                    validation.isPhone(".phone", "Số điện thoại không hợp lệ, chỉ được phép nhập số"),
+                    validation.isRequired(".birthday", "Vui lòng nhập trường này"),
+                    validation.isRequired(".email"),
+                    validation.isRequired("input[name=\"gender\"]", "Vui lòng nhập trường này")
+                ],
+                rulesaddition: [
+                    validation.isRequired(".password", "Vui lòng nhập trường này"),
+                    validation.isLimit(".password", "Nhập tối thiểu từ 6 ký tự trở lên", 7, 20),
+                    validation.isRequired(".confirm-password", "Vui lòng nhập trường này"),
+                    validation.isRequired(".passwordNew", "Vui lòng nhập trường này"),
+                    validation.isConfirmPassword(".confirm-password", ".passwordNew", "Mật khẩu nhập lại không chính xác"),
+                ],
+                inputData: {
+                    fullname: ".fullname",
+                    phone: ".phone",
+                    email: ".email",
+                    password: ".password",
+                    passwordNew: ".passwordNew",
+                    confirmPasswordNew: ".confirm-password",
+                    birthday: ".birthday",
+                    male: "#male",
+                    female: "#female",
+                    other: "#other",                    
+                },
+                dataForm(data) {
+                    let userApi = "http://localhost:3000/user";
+                    if (data) {
+                        let checkstr = {
+                            form: ".form-board",
+                            errorMassageEmail: ".errcheckmessageemail",
+                            errorMassagePass: ".errcheckmessagepass",
+                            errorValuePassword: "Mật khẩu không chính xác",
+                        };
+                        checkPasswordDb(userApi, data, ".email" , ".password", ".confirm-password", ".passwordNew", checkstr);                                                                                       
+                    }   
+                }
+            });
+    </script>
+</body>
+
+</html>
