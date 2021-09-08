@@ -1,0 +1,24 @@
+{
+  "user": [
+    {
+      "#fullname": "Nguyễn Quang Hiệp",
+      "#email": "hiepacr@gmail.com",
+      "#phone": "0382893332",
+      "#password": "1234567891",
+      "#confirm-password": "1234567891",
+      "#birthday": "2021-09-22",
+      "#gender": "male",
+      "id": 1
+    },
+    {
+      "#fullname": "Ngô Thành Nam",
+      "#email": "namacr@gmail.com",
+      "#phone": "03828933322",
+      "#password": "123456789",
+      "#confirm-password": "123456789",
+      "#birthday": "2021-09-01",
+      "#gender": "male",
+      "id": 2
+    }
+  ]
+}
